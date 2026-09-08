@@ -140,26 +140,35 @@ section a:hover {
 
 .carousel {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
 .three-col {
   display: flex;
+  width: 400px;
 
-  width: 450px;
+  overflow-x: auto;
+  overflow-y: hidden;
 
-  overflow-x: hidden;
+  gap: 30px;
 
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 
-  gap: 50px;
+  scrollbar-width: none;
+}
 
-  padding: 10px 20px 30px 20px;
+.three-col::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
   flex: 0 0 400px;
+
+  scroll-snap-align: start;
 
   text-align: center;
   background-color: bisque;
@@ -167,10 +176,7 @@ section a:hover {
   box-shadow: 10px 10px 5px rgb(76, 54, 27);
 
   font-family: "Playfair Display";
-  font-weight: 400;
   color: rgb(76, 54, 27);
-
-  scroll-snap-align: center;
 }
 
 .card img {
@@ -178,35 +184,27 @@ section a:hover {
   height: auto;
 }
 
-.card ul {
-  text-align: left;
-}
-
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 
-  border: none;
-  background: bisque;
-
-  font-size: 30px;
+  font-size: 35px;
   color: rgb(76, 54, 27);
+  text-decoration: none;
 
-  cursor: pointer;
+  background-color: bisque;
+  padding: 5px 10px;
+
   z-index: 10;
 }
 
 .carousel-btn.left {
-  left: 20px;
+  left: calc(50% - 260px);
 }
 
 .carousel-btn.right {
-  right: 20px;
-}
-
-.carousel-btn:hover {
-  color: rgb(47, 77, 45);
+  right: calc(50% - 260px);
 }
 
 /**************   Responsiveness   *****************/
