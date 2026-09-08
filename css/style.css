@@ -94,28 +94,21 @@ hr {
 
 }
 
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
 section h3 {
-  padding: 0;
-
+  padding: 0 0 0 10px;
   font-family: "Playfair Display";
   font-weight: 400;
-  color: rgb(76, 54, 27);
+  color:rgb(76, 54, 27);
 }
 
 section dl {
+  padding: 0 0 0 10px;
   display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
 
   font-family: "Playfair Display";
   font-weight: 400;
-  color: rgb(76, 54, 27);
+  color:rgb(76, 54, 27);
 }
 
 section dl dd{
@@ -125,11 +118,9 @@ section dl dd{
 
 section ul {
   list-style-type: none;
-  padding-left: 20px;
-
   font-family: "Playfair Display";
   font-weight: 400;
-  color: rgb(76, 54, 27);
+  color:rgb(76, 54, 27);
 }
 
 ul li::before {
