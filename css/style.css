@@ -167,6 +167,7 @@ section a:hover {
 
 .card {
   flex: 0 0 400px;
+	position: relative;
 
   scroll-snap-align: start;
 
@@ -182,6 +183,27 @@ section a:hover {
 .card img {
   width: 100%;
   height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 35px;
+  text-decoration: none;
+  color: rgb(76, 54, 27);
+
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 .carousel-btn {
