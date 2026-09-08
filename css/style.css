@@ -136,21 +136,29 @@ section a:hover {
   text-decoration: underline;
 }
 
-/**************   Projects   *****************/
+/************** Projects Carousel *****************/
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
 .three-col {
   display: flex;
-  overflow-x: auto;
 
-  gap: 50px;
-  padding: 10px 30px 30px 30px;
+  width: 450px;
+
+  overflow-x: hidden;
 
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-}
 
-.card img {
-  width: 400px;
-  height: auto;
+  gap: 50px;
+
+  padding: 10px 20px 30px 20px;
 }
 
 .card {
@@ -168,8 +176,27 @@ section a:hover {
   scroll-snap-align: center;
 }
 
-.card ul{
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card ul {
   text-align: left;
+}
+
+.carousel-btn {
+  border: none;
+  background: none;
+
+  font-size: 40px;
+  color: rgb(76, 54, 27);
+
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  color: rgb(47, 77, 45);
 }
 
 /**************   Responsiveness   *****************/
