@@ -139,10 +139,7 @@ section a:hover {
 /************** Projects Carousel *****************/
 
 .carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  position: relative;
   width: 100%;
 }
 
@@ -186,13 +183,26 @@ section a:hover {
 }
 
 .carousel-btn {
-  border: none;
-  background: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-  font-size: 40px;
+  border: none;
+  background: bisque;
+
+  font-size: 30px;
   color: rgb(76, 54, 27);
 
   cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 20px;
+}
+
+.carousel-btn.right {
+  right: 20px;
 }
 
 .carousel-btn:hover {
